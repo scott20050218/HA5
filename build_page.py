@@ -1,21 +1,20 @@
 def main():
-    # 个人信息配置
     personal_info = {
-        "name": "张三",
-        "title": "AI Engineer",
-        "description": "AI Engineer passionate about MLOps and automation.",
-        "skills": ["Python", "TensorFlow", "Git", "CI/CD", "Docker"],
+        "name": "Rui Li",
+        "title": "Software Engineer",
+        "description": "Software Engineer passionate about MLOps and automation.",
+        "skills": ["Java", "Nodejs", "React","Vuejs","Git", "CI/CD", "Docker"],
         "projects": [
-            {"name": "项目一", "url": "https://github.com/yourusername/project1"},
-            {"name": "项目二", "url": "https://github.com/yourusername/project2"}
+            {"name": "Project 1", "url": "https://admin.lihengrui.cn"},
+            {"name": "Project 2", "url": "https://xxg.lihengrui.cn"}
         ],
         "contact": {
-            "github": "https://github.com/yourusername",
-            "linkedin": "https://linkedin.com/in/yourprofile"
+            "github": "https://github.com/scott20050218",
+            "linkedin": "https://linkedin.com/in/rui-li-2bb2bb2a8"
         }
     }
     
-    # HTML模板
+    # HTML template
     html_content = f"""
     <!DOCTYPE html>
     <html lang="zh-CN">
@@ -80,17 +79,17 @@ def main():
             <div class="title">{personal_info['title']}</div>
             <p>{personal_info['description']}</p>
             
-            <h2>技能</h2>
+            <h2>Skills</h2>
             <div class="skills">
     """
     
-    # 添加技能标签
+    # add skills
     for skill in personal_info['skills']:
         html_content += f'            <span class="skill">{skill}</span>\n'
     
     html_content += """            </div>
             
-            <h2>项目经历</h2>
+            <h2>Project Experience</h2>
             <div class="projects">
                 <ul>
     """
@@ -102,7 +101,7 @@ def main():
     html_content += f"""                </ul>
             </div>
             
-            <h2>联系方式</h2>
+            <h2>Contact Information</h2>
             <div class="contact">
                 <p>
                     <a href="{personal_info['contact']['github']}" target="_blank">GitHub</a> | 
