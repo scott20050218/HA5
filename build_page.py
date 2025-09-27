@@ -114,7 +114,7 @@ def main():
     """
     
     # 写入文件
-    with open("index.html", "w", encoding="utf-8") as f:
+    with open("index-back.html", "w", encoding="utf-8") as f:
         f.write(html_content)
     
     print("index.html generated successfully!")
